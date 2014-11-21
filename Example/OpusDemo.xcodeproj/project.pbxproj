@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016AA16E1A1F35AF00A07A1E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016AA16D1A1F35AF00A07A1E /* OpenGLES.framework */; };
 		D9813ED318B1C96E009544CB /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9813ED218B1C96E009544CB /* libopus.a */; };
 		D9813F0318B1D855009544CB /* CMBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F0218B1D855009544CB /* CMBRootViewController.m */; };
 		D9813F1E18B1DBB5009544CB /* CMBAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F1D18B1DBB5009544CB /* CMBAudioController.m */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016AA16D1A1F35AF00A07A1E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D92D51A618B9E6CE00DB8723 /* _kiss_fft_guts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
 		D92D51A718B9E6CE00DB8723 /* arch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arch.h; sourceTree = "<group>"; };
 		D92D51A918B9E6CE00DB8723 /* arm2gnu.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = arm2gnu.pl; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016AA16E1A1F35AF00A07A1E /* OpenGLES.framework in Frameworks */,
 				D9813F5118B1FD29009544CB /* AVFoundation.framework in Frameworks */,
 				D9813F4F18B1FD1D009544CB /* GLKit.framework in Frameworks */,
 				D9813F4D18B1FD18009544CB /* AudioToolbox.framework in Frameworks */,
@@ -838,6 +841,7 @@
 		D9B706A918AC13AB00F1B5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				016AA16D1A1F35AF00A07A1E /* OpenGLES.framework */,
 				D9813F5018B1FD29009544CB /* AVFoundation.framework */,
 				D9813F4E18B1FD1D009544CB /* GLKit.framework */,
 				D9813F4C18B1FD18009544CB /* AudioToolbox.framework */,

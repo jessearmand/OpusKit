@@ -59,6 +59,7 @@
     
     self.microphone = [[EZMicrophone alloc] initWithMicrophoneDelegate:self];
     AudioStreamBasicDescription absd = [self.microphone audioStreamBasicDescription];
+    absd.mSampleRate = kOpusKitSampleRate_48000;
     [self setupOpusFromABSD:absd];
     [self.microphone startFetchingAudio];
 }
@@ -81,6 +82,9 @@
             NSLog(@"Error decoding packet: %@", error);
             return;
         }
+        
+        NSLog(@"number of decoded samples: %d", numDecodedSamples);
+        
         BOOL success = TPCircularBufferProduceBytes(_outputBuffer, pcmData.bytes, pcmData.length);
         if (!success) {
             NSLog(@"Error copying output pcm into buffer, insufficient space");
